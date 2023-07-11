@@ -16,6 +16,6 @@ def build_docker_image(){
     echo "Building docker image.."
     sh "docker build --no-cache -t kristelj/api-tests:latest ."
 
-    echo "Pushing docker image to docker registry.."
+    echo "Pushing docker image to registry.."
     sh "docker push kristelj/api-tests:latest"
 }
